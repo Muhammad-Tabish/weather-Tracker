@@ -9,6 +9,13 @@
 </head>
 <body>
     <div id="loading"></div>
+
+    <div class="iframe">
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/D89C8T9yKpM" 
+        frameborder="0" allowfullscreen></iframe> </div>
+
+    
+
     <div class="card">
         <div class="search">
             <input type="text" class="search-bar">
@@ -31,5 +38,26 @@
                 
         </div>
     </div>
+
+    
+
+
+<script>
+     window.addEventListener('load', function(){
+                
+         var loader = document.getElementById('loading', 'iframe');
+            loader.style.opacity = '0';
+            loader.style.display = 'none';
+                 
+            loader.addEventListener('transitionend', function(){
+                     loader.style.display = 'none';    
+                     })
+            
+             });
+        
+    
+    
+</script>
+
 </body>
 </html>
